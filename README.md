@@ -1,5 +1,15 @@
 # dart-dockerx-builder
 
+## DEPRECATED!
+
+Fortunately as of Dart 3.8 it's possible to do cross-compilation!
+
+```bash
+dart compile exe --target-os=linux --target-arch=arm64
+```
+
+----
+
 Give `build.sh` an argument with the Dart project folder and it will output executables for `darwin-arm64`, `linux-amd64` and `linux-aarch64`.
 
 Assumes host is MacOS, and `docker` with `dockerx` plugin and `colima` are installed. I do not use Docker Desktop.
